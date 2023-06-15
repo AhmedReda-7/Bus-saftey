@@ -1,0 +1,3075 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/18/2023 6:09:59 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="AHMED-PC"
+  DTS:CreatorName="AHMED-PC\Ahmed"
+  DTS:DTSID="{D80C378D-0D23-4E15-9B14-FDFB4DAC537F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5131.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{BDE8BCE7-5815-4242-8C18-9F7284700E95}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{B3A26950-6361-49F9-8590-1427D82304CD}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second half.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A296E2D5-4462-4A2B-8975-A5E799A491E2}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second-half-part-1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 10]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A09C9297-AB23-4322-8CBF-3C89FF153A07}"
+      DTS:ObjectName="Excel Connection Manager 10">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second-half-part-2.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 11]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{466D3C68-E7B8-40AD-9475-D3D35DEF9706}"
+      DTS:ObjectName="Excel Connection Manager 11">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second-half-part-1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{3BB6824C-0BCE-4D72-89CC-C150256780FB}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second-half-part-1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{CB946273-9D9C-4D17-A1B5-9888C45EC896}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second-half-part-1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{B010479C-CF7B-425A-A46E-696C3D4B6C95}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second-half-part-1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{77A731F1-9F56-42C1-84A2-261136ED728B}"
+      DTS:ObjectName="Excel Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second-half-part-1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=NO&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 6]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{0292B827-308B-475E-9D4A-4FCD68E9F2DA}"
+      DTS:ObjectName="Excel Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second-half-part-1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 7]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{C83FB83F-460E-428C-9A37-A3C7B315F09D}"
+      DTS:ObjectName="Excel Connection Manager 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second-half-part-1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 8]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{85DB134F-DCE3-4EB3-BE65-11CA7EBF16F2}"
+      DTS:ObjectName="Excel Connection Manager 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second half - Copy.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 9]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{59EE21A7-E42F-420F-8E90-A649E79A54E9}"
+      DTS:ObjectName="Excel Connection Manager 9">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ahmed\Downloads\Dim\Second-half-part-1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Files]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{7F3D9E96-34B0-4FEF-BE42-D9D50273CA1A}"
+      DTS:ObjectName="Excel Files">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Dsn=Excel Files;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{C36DD592-AE32-4541-B9EF-59BF82E7F358}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 11]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 11]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[State Fiscal Year End Date]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]"
+                      name="State Fiscal Year End Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Operator Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Operator Name]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Operator Name]"
+                      name="Operator Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Total Inspections]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Total Inspections]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Total Inspections]"
+                      name="Total Inspections"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Failed Inspections]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Failed Inspections]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Failed Inspections]"
+                      name="Failed Inspections"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Operator ID]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Operator ID]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Operator ID]"
+                      name="Operator ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[City]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[City]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Region]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Region]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Region]"
+                      name="Region"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Day]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Day]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Day]"
+                      name="Day"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Month]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Month]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Month]"
+                      name="Month"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Year]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Year]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[State Fiscal Year End Date]"
+                      dataType="date"
+                      name="State Fiscal Year End Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Operator Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Operator Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Total Inspections]"
+                      dataType="r8"
+                      name="Total Inspections" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Failed Inspections]"
+                      dataType="r8"
+                      name="Failed Inspections" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Operator ID]"
+                      dataType="r8"
+                      name="Operator ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="255"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Region]"
+                      dataType="r8"
+                      name="Region" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Day]"
+                      dataType="wstr"
+                      length="255"
+                      name="Day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Month]"
+                      dataType="wstr"
+                      length="255"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Year]"
+                      dataType="wstr"
+                      length="255"
+                      name="Year" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[State Fiscal Year End Date]"
+                      dataType="date"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[State Fiscal Year End Date]"
+                      name="State Fiscal Year End Date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Operator Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Operator Name]"
+                      name="Operator Name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Total Inspections]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Total Inspections]"
+                      name="Total Inspections" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Failed Inspections]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Failed Inspections]"
+                      name="Failed Inspections" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Operator ID]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Operator ID]"
+                      name="Operator ID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[City]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[City]"
+                      name="City" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Region]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Region]"
+                      name="Region" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Day]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Day]"
+                      name="Day" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Month]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Month]"
+                      name="Month" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Year]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Year]"
+                      name="Year" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Excel Source Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Out part 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{E697D4F0-1C93-49A2-B30F-11CA4D0544D4}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Out part 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Out part 1\City Uppercased"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="City Uppercased"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Out part 1\City Uppercased.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 1\City Uppercased.Inputs[Derived Column Input].Columns[City]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="City"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[City]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[UPPER]([SUBSTRING](#{Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[City]},1,1)) + [LOWER]([SUBSTRING](#{Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[City]},2,[LEN](#{Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[City]}) - 1))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">UPPER(SUBSTRING(City,1,1)) + LOWER(SUBSTRING(City,2,LEN(City) - 1))</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 1\City Uppercased.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Out part 1\City Uppercased.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 1\City Uppercased.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Out part 1\City Uppercased.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 1\City Uppercased.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\City Uppercased.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 1\City Uppercased.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\City Uppercased.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 1\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Out part 1\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 1\Data Conversion.Inputs[Data Conversion Input].Columns[State Fiscal Year End Date]"
+                      cachedDataType="date"
+                      cachedName="State Fiscal Year End Date"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 1\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Out part 1\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 1\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Out part 1\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]"
+                      name="Converted_Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 1\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Out part 1\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 1\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 1\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 1\Date Splitted"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Date Splitted"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Out part 1\Date Splitted.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 1\Date Splitted.Inputs[Derived Column Input].Columns[Converted_Date]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Converted_Date"
+                      lineageId="Package\Out part 1\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 1\Date Splitted.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Out part 1\Date Splitted.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 1\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Day]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="1"
+                      lineageId="Package\Out part 1\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Day]"
+                      name="Converted_Day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[SUBSTRING](#{Package\Out part 1\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]},3,1)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SUBSTRING(Converted_Date,3,1)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Out part 1\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Month]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="1"
+                      lineageId="Package\Out part 1\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Month]"
+                      name="Converted_Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[SUBSTRING](#{Package\Out part 1\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]},1,1)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SUBSTRING(Converted_Date,1,1)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Out part 1\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Year]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="4"
+                      lineageId="Package\Out part 1\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Year]"
+                      name="Converted_Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[SUBSTRING](#{Package\Out part 1\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]},5,4)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SUBSTRING(Converted_Date,5,4)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 1\Date Splitted.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Out part 1\Date Splitted.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 1\Date Splitted.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Date Splitted.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 1\Date Splitted.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Date Splitted.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 1\Failed Inspection equal 0"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Failed Inspection equal 0"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Out part 1\Failed Inspection equal 0.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 1\Failed Inspection equal 0.Inputs[Conditional Split Input].Columns[Failed Inspections]"
+                      cachedDataType="r8"
+                      cachedName="Failed Inspections"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 1\Failed Inspection equal 0.Outputs[equal zero]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="equal zero"
+                  synchronousInputId="Package\Out part 1\Failed Inspection equal 0.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]} == 0</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">[Failed Inspections] == 0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 1\Failed Inspection equal 0.Outputs[not]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="not"
+                  synchronousInputId="Package\Out part 1\Failed Inspection equal 0.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]} != 0</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">[Failed Inspections] != 0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 1\Failed Inspection equal 0.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Out part 1\Failed Inspection equal 0.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 1\Failed Inspection equal 0.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Out part 1\Failed Inspection equal 0.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 1\Failed Inspection equal 0.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Failed Inspection equal 0.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 1\Failed Inspection equal 0.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Failed Inspection equal 0.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 1\Second half"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Second half"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Out part 1\Second half.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Out part 1\Second half.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[State Fiscal Year End Date]"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]"
+                      name="State Fiscal Year End Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Operator Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[Operator Name]"
+                      length="255"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Operator Name]"
+                      name="Operator Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Total Inspections]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[Total Inspections]"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Total Inspections]"
+                      name="Total Inspections"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[Failed Inspections]"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]"
+                      name="Failed Inspections"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Operator ID]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[Operator ID]"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Operator ID]"
+                      name="Operator ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[City]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[City]"
+                      length="255"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Region]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[Region]"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Region]"
+                      name="Region"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[State Fiscal Year End Date]"
+                      dataType="date"
+                      name="State Fiscal Year End Date" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[Operator Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Operator Name" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[Total Inspections]"
+                      dataType="r8"
+                      name="Total Inspections" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[Failed Inspections]"
+                      dataType="r8"
+                      name="Failed Inspections" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[Operator ID]"
+                      dataType="r8"
+                      name="Operator ID" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="255"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Output].ExternalColumns[Region]"
+                      dataType="r8"
+                      name="Region" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Out part 1\Second half.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[State Fiscal Year End Date]"
+                      dataType="date"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[State Fiscal Year End Date]"
+                      name="State Fiscal Year End Date" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[Operator Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[Operator Name]"
+                      name="Operator Name" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[Total Inspections]"
+                      dataType="r8"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[Total Inspections]"
+                      name="Total Inspections" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[Failed Inspections]"
+                      dataType="r8"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[Failed Inspections]"
+                      name="Failed Inspections" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[Operator ID]"
+                      dataType="r8"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[Operator ID]"
+                      name="Operator ID" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[City]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[City]"
+                      name="City" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[Region]"
+                      dataType="r8"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[Region]"
+                      name="Region" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 1\Second half part 1"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="Second half part 1"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Out part 1\Second half part 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 9]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="IgnoreFailure"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].Columns[State Fiscal Year End Date]"
+                      cachedDataType="date"
+                      cachedName="State Fiscal Year End Date"
+                      externalMetadataColumnId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[State Fiscal Year End Date]"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]" />
+                    <inputColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].Columns[Total Inspections]"
+                      cachedDataType="r8"
+                      cachedName="Total Inspections"
+                      externalMetadataColumnId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Total Inspections]"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Total Inspections]" />
+                    <inputColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].Columns[Failed Inspections]"
+                      cachedDataType="r8"
+                      cachedName="Failed Inspections"
+                      externalMetadataColumnId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Failed Inspections]"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]" />
+                    <inputColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].Columns[Operator ID]"
+                      cachedDataType="r8"
+                      cachedName="Operator ID"
+                      externalMetadataColumnId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Operator ID]"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Operator ID]" />
+                    <inputColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].Columns[City]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="City"
+                      externalMetadataColumnId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[City]"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[City]" />
+                    <inputColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].Columns[Region]"
+                      cachedDataType="r8"
+                      cachedName="Region"
+                      externalMetadataColumnId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Region]"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Region]" />
+                    <inputColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].Columns[Underscored]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Underscored"
+                      externalMetadataColumnId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Operator Name]"
+                      lineageId="Package\Out part 1\Underscored.Outputs[Derived Column Output].Columns[Underscored]" />
+                    <inputColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].Columns[Converted_Day]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Converted_Day"
+                      externalMetadataColumnId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Day]"
+                      lineageId="Package\Out part 1\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Day]" />
+                    <inputColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].Columns[Converted_Month]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Converted_Month"
+                      externalMetadataColumnId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Month]"
+                      lineageId="Package\Out part 1\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Month]" />
+                    <inputColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].Columns[Converted_Year]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="Converted_Year"
+                      externalMetadataColumnId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\Out part 1\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Year]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[State Fiscal Year End Date]"
+                      dataType="date"
+                      name="State Fiscal Year End Date" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Operator Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Operator Name" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Total Inspections]"
+                      dataType="r8"
+                      name="Total Inspections" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Failed Inspections]"
+                      dataType="r8"
+                      name="Failed Inspections" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Operator ID]"
+                      dataType="r8"
+                      name="Operator ID" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="255"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Region]"
+                      dataType="r8"
+                      name="Region" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Day]"
+                      dataType="wstr"
+                      length="255"
+                      name="Day" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Month]"
+                      dataType="wstr"
+                      length="255"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input].ExternalColumns[Year]"
+                      dataType="wstr"
+                      length="255"
+                      name="Year" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 1\Second half part 1.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 1\Second half part 1.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Second half part 1.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 1\Second half part 1.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Second half part 1.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 1\Underscored"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Underscored"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Out part 1\Underscored.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 1\Underscored.Inputs[Derived Column Input].Columns[Operator Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Operator Name"
+                      lineageId="Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Operator Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 1\Underscored.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Out part 1\Underscored.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 1\Underscored.Outputs[Derived Column Output].Columns[Underscored]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Out part 1\Underscored.Outputs[Derived Column Output].Columns[Underscored]"
+                      name="Underscored"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACE](#{Package\Out part 1\Second half.Outputs[Excel Source Output].Columns[Operator Name]}," ","_")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACE([Operator Name]," ","_")</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 1\Underscored.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Out part 1\Underscored.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 1\Underscored.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Underscored.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 1\Underscored.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 1\Underscored.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Out part 1.Paths[Data Conversion Output]"
+              endId="Package\Out part 1\Date Splitted.Inputs[Derived Column Input]"
+              name="Data Conversion Output"
+              startId="Package\Out part 1\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Out part 1.Paths[Derived Column Output]"
+              endId="Package\Out part 1\Data Conversion.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\Out part 1\City Uppercased.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Out part 1.Paths[Derived Column Output1]"
+              endId="Package\Out part 1\Underscored.Inputs[Derived Column Input]"
+              name="Derived Column Output"
+              startId="Package\Out part 1\Date Splitted.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Out part 1.Paths[Derived Column Output2]"
+              endId="Package\Out part 1\Second half part 1.Inputs[Excel Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Out part 1\Underscored.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Out part 1.Paths[equal zero]"
+              endId="Package\Out part 1\City Uppercased.Inputs[Derived Column Input]"
+              name="equal zero"
+              startId="Package\Out part 1\Failed Inspection equal 0.Outputs[equal zero]" />
+            <path
+              refId="Package\Out part 1.Paths[Excel Source Output]"
+              endId="Package\Out part 1\Failed Inspection equal 0.Inputs[Conditional Split Input]"
+              name="Excel Source Output"
+              startId="Package\Out part 1\Second half.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Out part 2"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D0467FCA-1694-4C69-B543-E5DA8D1947FB}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Out part 2"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Out part 2\City Uppercased"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="City Uppercased"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Out part 2\City Uppercased.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 2\City Uppercased.Inputs[Derived Column Input].Columns[City]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="City"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[City]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[UPPER]([SUBSTRING](#{Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[City]},1,1)) + [LOWER]([SUBSTRING](#{Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[City]},2,[LEN](#{Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[City]}) - 1))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">UPPER(SUBSTRING(City,1,1)) + LOWER(SUBSTRING(City,2,LEN(City) - 1))</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 2\City Uppercased.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Out part 2\City Uppercased.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 2\City Uppercased.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Out part 2\City Uppercased.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 2\City Uppercased.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\City Uppercased.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 2\City Uppercased.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\City Uppercased.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 2\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Out part 2\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 2\Data Conversion.Inputs[Data Conversion Input].Columns[State Fiscal Year End Date]"
+                      cachedDataType="date"
+                      cachedName="State Fiscal Year End Date"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 2\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Out part 2\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 2\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Out part 2\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]"
+                      name="Converted_Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 2\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Out part 2\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 2\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 2\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 2\Date Splitted"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Date Splitted"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Out part 2\Date Splitted.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 2\Date Splitted.Inputs[Derived Column Input].Columns[Converted_Date]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Converted_Date"
+                      lineageId="Package\Out part 2\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 2\Date Splitted.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Out part 2\Date Splitted.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 2\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Day]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="1"
+                      lineageId="Package\Out part 2\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Day]"
+                      name="Converted_Day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[SUBSTRING](#{Package\Out part 2\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]},3,1)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SUBSTRING(Converted_Date,3,1)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Out part 2\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Month]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="1"
+                      lineageId="Package\Out part 2\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Month]"
+                      name="Converted_Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[SUBSTRING](#{Package\Out part 2\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]},1,1)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SUBSTRING(Converted_Date,1,1)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Out part 2\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Year]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="4"
+                      lineageId="Package\Out part 2\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Year]"
+                      name="Converted_Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[SUBSTRING](#{Package\Out part 2\Data Conversion.Outputs[Data Conversion Output].Columns[Converted_Date]},5,4)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">SUBSTRING(Converted_Date,5,4)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 2\Date Splitted.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Out part 2\Date Splitted.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 2\Date Splitted.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Date Splitted.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 2\Date Splitted.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Date Splitted.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 2\Failed Inspection equal 0"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Failed Inspection equal 0"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Out part 2\Failed Inspection equal 0.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 2\Failed Inspection equal 0.Inputs[Conditional Split Input].Columns[Failed Inspections]"
+                      cachedDataType="r8"
+                      cachedName="Failed Inspections"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 2\Failed Inspection equal 0.Outputs[equal zero]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="equal zero"
+                  synchronousInputId="Package\Out part 2\Failed Inspection equal 0.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]} == 0</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">[Failed Inspections] == 0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 2\Failed Inspection equal 0.Outputs[not]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="not"
+                  synchronousInputId="Package\Out part 2\Failed Inspection equal 0.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]} != 0</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">[Failed Inspections] != 0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 2\Failed Inspection equal 0.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Out part 2\Failed Inspection equal 0.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 2\Failed Inspection equal 0.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Out part 2\Failed Inspection equal 0.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 2\Failed Inspection equal 0.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Failed Inspection equal 0.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 2\Failed Inspection equal 0.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Failed Inspection equal 0.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 2\Second half"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Second half"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Out part 2\Second half.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Out part 2\Second half.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[State Fiscal Year End Date]"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]"
+                      name="State Fiscal Year End Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Operator Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[Operator Name]"
+                      length="255"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Operator Name]"
+                      name="Operator Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Total Inspections]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[Total Inspections]"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Total Inspections]"
+                      name="Total Inspections"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[Failed Inspections]"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]"
+                      name="Failed Inspections"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Operator ID]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[Operator ID]"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Operator ID]"
+                      name="Operator ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[City]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[City]"
+                      length="255"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Region]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[Region]"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Region]"
+                      name="Region"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[State Fiscal Year End Date]"
+                      dataType="date"
+                      name="State Fiscal Year End Date" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[Operator Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Operator Name" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[Total Inspections]"
+                      dataType="r8"
+                      name="Total Inspections" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[Failed Inspections]"
+                      dataType="r8"
+                      name="Failed Inspections" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[Operator ID]"
+                      dataType="r8"
+                      name="Operator ID" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="255"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Output].ExternalColumns[Region]"
+                      dataType="r8"
+                      name="Region" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Out part 2\Second half.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[State Fiscal Year End Date]"
+                      dataType="date"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[State Fiscal Year End Date]"
+                      name="State Fiscal Year End Date" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[Operator Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[Operator Name]"
+                      name="Operator Name" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[Total Inspections]"
+                      dataType="r8"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[Total Inspections]"
+                      name="Total Inspections" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[Failed Inspections]"
+                      dataType="r8"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[Failed Inspections]"
+                      name="Failed Inspections" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[Operator ID]"
+                      dataType="r8"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[Operator ID]"
+                      name="Operator ID" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[City]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[City]"
+                      name="City" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[Region]"
+                      dataType="r8"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[Region]"
+                      name="Region" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 2\Second half part 2"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="Second half part 2"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Out part 2\Second half part 2.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 10]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 10]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="IgnoreFailure"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].Columns[State Fiscal Year End Date]"
+                      cachedDataType="date"
+                      cachedName="State Fiscal Year End Date"
+                      externalMetadataColumnId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[State Fiscal Year End Date]"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[State Fiscal Year End Date]" />
+                    <inputColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].Columns[Total Inspections]"
+                      cachedDataType="r8"
+                      cachedName="Total Inspections"
+                      externalMetadataColumnId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Total Inspections]"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Total Inspections]" />
+                    <inputColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].Columns[Failed Inspections]"
+                      cachedDataType="r8"
+                      cachedName="Failed Inspections"
+                      externalMetadataColumnId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Failed Inspections]"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Failed Inspections]" />
+                    <inputColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].Columns[Operator ID]"
+                      cachedDataType="r8"
+                      cachedName="Operator ID"
+                      externalMetadataColumnId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Operator ID]"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Operator ID]" />
+                    <inputColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].Columns[City]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="City"
+                      externalMetadataColumnId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[City]"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[City]" />
+                    <inputColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].Columns[Region]"
+                      cachedDataType="r8"
+                      cachedName="Region"
+                      externalMetadataColumnId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Region]"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Region]" />
+                    <inputColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].Columns[Underscored]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Underscored"
+                      externalMetadataColumnId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Operator Name]"
+                      lineageId="Package\Out part 2\Underscored.Outputs[Derived Column Output].Columns[Underscored]" />
+                    <inputColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].Columns[Converted_Day]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Converted_Day"
+                      externalMetadataColumnId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Day]"
+                      lineageId="Package\Out part 2\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Day]" />
+                    <inputColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].Columns[Converted_Month]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="Converted_Month"
+                      externalMetadataColumnId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Month]"
+                      lineageId="Package\Out part 2\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Month]" />
+                    <inputColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].Columns[Converted_Year]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="Converted_Year"
+                      externalMetadataColumnId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\Out part 2\Date Splitted.Outputs[Derived Column Output].Columns[Converted_Year]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[State Fiscal Year End Date]"
+                      dataType="date"
+                      name="State Fiscal Year End Date" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Operator Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Operator Name" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Total Inspections]"
+                      dataType="r8"
+                      name="Total Inspections" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Failed Inspections]"
+                      dataType="r8"
+                      name="Failed Inspections" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Operator ID]"
+                      dataType="r8"
+                      name="Operator ID" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="255"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Region]"
+                      dataType="r8"
+                      name="Region" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Day]"
+                      dataType="wstr"
+                      length="255"
+                      name="Day" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Month]"
+                      dataType="wstr"
+                      length="255"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input].ExternalColumns[Year]"
+                      dataType="wstr"
+                      length="255"
+                      name="Year" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 2\Second half part 2.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 2\Second half part 2.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Second half part 2.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 2\Second half part 2.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Second half part 2.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Out part 2\Underscored"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Underscored"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Out part 2\Underscored.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Out part 2\Underscored.Inputs[Derived Column Input].Columns[Operator Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Operator Name"
+                      lineageId="Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Operator Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Out part 2\Underscored.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Out part 2\Underscored.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 2\Underscored.Outputs[Derived Column Output].Columns[Underscored]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Out part 2\Underscored.Outputs[Derived Column Output].Columns[Underscored]"
+                      name="Underscored"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACE](#{Package\Out part 2\Second half.Outputs[Excel Source Output].Columns[Operator Name]}," ","_")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACE([Operator Name]," ","_")</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Out part 2\Underscored.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Out part 2\Underscored.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Out part 2\Underscored.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Underscored.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Out part 2\Underscored.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Out part 2\Underscored.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Out part 2.Paths[Data Conversion Output]"
+              endId="Package\Out part 2\Date Splitted.Inputs[Derived Column Input]"
+              name="Data Conversion Output"
+              startId="Package\Out part 2\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Out part 2.Paths[Derived Column Output]"
+              endId="Package\Out part 2\Second half part 2.Inputs[Excel Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Out part 2\Underscored.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Out part 2.Paths[Derived Column Output1]"
+              endId="Package\Out part 2\Underscored.Inputs[Derived Column Input]"
+              name="Derived Column Output"
+              startId="Package\Out part 2\Date Splitted.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Out part 2.Paths[Derived Column Output2]"
+              endId="Package\Out part 2\Data Conversion.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\Out part 2\City Uppercased.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Out part 2.Paths[Excel Source Output]"
+              endId="Package\Out part 2\Failed Inspection equal 0.Inputs[Conditional Split Input]"
+              name="Excel Source Output"
+              startId="Package\Out part 2\Second half.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Out part 2.Paths[not]"
+              endId="Package\Out part 2\City Uppercased.Inputs[Derived Column Input]"
+              name="not"
+              startId="Package\Out part 2\Failed Inspection equal 0.Outputs[not]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task"
+          TopLeft="194.99998934567,319.799997776151" />
+        <NodeLayout
+          Size="124,41.6"
+          Id="Package\Out part 1"
+          TopLeft="108.333327414261,92.7333326884773" />
+        <NodeLayout
+          Size="124,41.6"
+          Id="Package\Out part 2"
+          TopLeft="443.333309110669,126.533332453436" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="446.666642261877,327.59999772191" />
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Data Flow Task\Excel Source"
+          TopLeft="392.499978554746,166.399998842875" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Excel Source Output]"
+          TopLeft="462.499978554746,207.999998842875">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="69.7666637071306,119.599998879035"
+              Start="0,0"
+              End="69.7666637071306,112.099998879035">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.7999994395176" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,55.7999994395176"
+                    Point2="0,59.7999994395176"
+                    Point3="4,59.7999994395176" />
+                  <mssgle:LineSegment
+                    End="65.7666637071306,59.7999994395176" />
+                  <mssgle:CubicBezierSegment
+                    Point1="65.7666637071306,59.7999994395176"
+                    Point2="69.7666637071306,59.7999994395176"
+                    Point3="69.7666637071306,63.7999994395176" />
+                  <mssgle:LineSegment
+                    End="69.7666637071306,112.099998879035" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Out part 1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="133.6,41.6"
+          Id="Package\Out part 1\Second half"
+          TopLeft="159.166657970184,21.6666665159993" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Out part 1\Data Conversion"
+          TopLeft="643.333298183151,222.733331784474" />
+        <NodeLayout
+          Size="137.6,41.6"
+          Id="Package\Out part 1\Underscored"
+          TopLeft="80.8333289167949,241.799998318553" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Out part 1\Second half part 1"
+          TopLeft="329.999981969596,286.866664671832" />
+        <NodeLayout
+          Size="137.6,41.6"
+          Id="Package\Out part 1\Date Splitted"
+          TopLeft="211.66665510171,188.933332019515" />
+        <NodeLayout
+          Size="193.6,41.6"
+          Id="Package\Out part 1\Failed Inspection equal 0"
+          TopLeft="294.999983881911,101.399999294877" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Out part 1\City Uppercased"
+          TopLeft="659.999963939191,110.933332561917" />
+        <EdgeLayout
+          Id="Package\Out part 1.Paths[Derived Column Output2]"
+          TopLeft="218.433328916795,262.599998318553">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="111.566653052801,45.066666353279"
+              Start="0,0"
+              End="104.066653052801,45.066666353279">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="51.7833265264005,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.7833265264005,0"
+                    Point2="55.7833265264005,0"
+                    Point3="55.7833265264005,4" />
+                  <mssgle:LineSegment
+                    End="55.7833265264005,41.066666353279" />
+                  <mssgle:CubicBezierSegment
+                    Point1="55.7833265264005,41.066666353279"
+                    Point2="55.7833265264005,45.066666353279"
+                    Point3="59.7833265264005,45.066666353279" />
+                  <mssgle:LineSegment
+                    End="104.066653052801,45.066666353279" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Out part 1.Paths[Derived Column Output1]"
+          TopLeft="211.66665510171,209.733332019515">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-62.0333261849151,32.066666299038"
+              Start="0,0"
+              End="-62.0333261849151,24.566666299038">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-58.0333261849151,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-58.0333261849151,0"
+                    Point2="-62.0333261849151,0"
+                    Point3="-62.0333261849151,4" />
+                  <mssgle:LineSegment
+                    End="-62.0333261849151,24.566666299038" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Out part 1.Paths[Derived Column Output]"
+          TopLeft="737.599963939191,152.533332561917">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-16.2666657560401,70.199999222557"
+              Start="0,0"
+              End="-16.2666657560401,62.699999222557">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.0999996112785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.0999996112785"
+                    Point2="0,35.0999996112785"
+                    Point3="-4,35.0999996112785" />
+                  <mssgle:LineSegment
+                    End="-12.2666657560401,35.0999996112785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-12.2666657560401,35.0999996112785"
+                    Point2="-16.2666657560401,35.0999996112785"
+                    Point3="-16.2666657560401,39.0999996112785" />
+                  <mssgle:LineSegment
+                    End="-16.2666657560401,62.699999222557" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Out part 1.Paths[Data Conversion Output]"
+          TopLeft="643.333298183151,243.533331784474">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-294.066643081441,-33.799999764959"
+              Start="0,0"
+              End="-286.566643081441,-33.799999764959">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-143.033321540721,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-143.033321540721,0"
+                    Point2="-147.033321540721,0"
+                    Point3="-147.033321540721,-4" />
+                  <mssgle:LineSegment
+                    End="-147.033321540721,-29.799999764959" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-147.033321540721,-29.799999764959"
+                    Point2="-147.033321540721,-33.799999764959"
+                    Point3="-151.033321540721,-33.799999764959" />
+                  <mssgle:LineSegment
+                    End="-286.566643081441,-33.799999764959" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Out part 1.Paths[Excel Source Output]"
+          TopLeft="225.966657970184,63.2666665159993">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="165.833325911727,38.1333327788777"
+              Start="0,0"
+              End="165.833325911727,30.6333327788777">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.0666663894389" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.0666663894389"
+                    Point2="0,19.0666663894389"
+                    Point3="4,19.0666663894389" />
+                  <mssgle:LineSegment
+                    End="161.833325911727,19.0666663894389" />
+                  <mssgle:CubicBezierSegment
+                    Point1="161.833325911727,19.0666663894389"
+                    Point2="165.833325911727,19.0666663894389"
+                    Point3="165.833325911727,23.0666663894389" />
+                  <mssgle:LineSegment
+                    End="165.833325911727,30.6333327788777" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Out part 1.Paths[equal zero]"
+          TopLeft="488.599983881911,122.199999294877">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="171.39998005728,9.53333326703999"
+              Start="0,0"
+              End="163.89998005728,9.53333326703999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="81.69999002864,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="81.69999002864,0"
+                    Point2="85.69999002864,0"
+                    Point3="85.69999002864,4" />
+                  <mssgle:LineSegment
+                    End="85.69999002864,5.53333326703999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="85.69999002864,5.53333326703999"
+                    Point2="85.69999002864,9.53333326703999"
+                    Point3="89.69999002864,9.53333326703999" />
+                  <mssgle:LineSegment
+                    End="163.89998005728,9.53333326703999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="62.09834940364,-17.609375,47.20328125,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Out part 1\Second half">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Out part 1\Second half part 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Out part 2">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="133.6,41.6"
+          Id="Package\Out part 2\Second half"
+          TopLeft="138.333329053389,60" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Out part 2\Data Conversion"
+          TopLeft="622.499969266356,261.066665268475" />
+        <NodeLayout
+          Size="137.6,41.6"
+          Id="Package\Out part 2\Underscored"
+          TopLeft="60,280.133331802554" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Out part 2\Second half part 2"
+          TopLeft="309.166653052801,325.199998155833" />
+        <NodeLayout
+          Size="137.6,41.6"
+          Id="Package\Out part 2\Date Splitted"
+          TopLeft="190.833326184915,227.266665503516" />
+        <NodeLayout
+          Size="193.6,41.6"
+          Id="Package\Out part 2\Failed Inspection equal 0"
+          TopLeft="274.166654965116,139.733332778878" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Out part 2\City Uppercased"
+          TopLeft="639.166635022396,149.266666045918" />
+        <EdgeLayout
+          Id="Package\Out part 2.Paths[Derived Column Output2]"
+          TopLeft="716.766635022396,190.866666045918">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-16.2666657560401,70.199999222557"
+              Start="0,0"
+              End="-16.2666657560401,62.699999222557">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.0999996112785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.0999996112785"
+                    Point2="0,35.0999996112785"
+                    Point3="-4,35.0999996112785" />
+                  <mssgle:LineSegment
+                    End="-12.2666657560401,35.0999996112785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-12.2666657560401,35.0999996112785"
+                    Point2="-16.2666657560401,35.0999996112785"
+                    Point3="-16.2666657560401,39.0999996112785" />
+                  <mssgle:LineSegment
+                    End="-16.2666657560401,62.699999222557" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Out part 2.Paths[Derived Column Output1]"
+          TopLeft="190.833326184915,248.066665503516">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-62.0333261849151,32.066666299038"
+              Start="0,0"
+              End="-62.0333261849151,24.566666299038">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-58.0333261849151,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-58.0333261849151,0"
+                    Point2="-62.0333261849151,0"
+                    Point3="-62.0333261849151,4" />
+                  <mssgle:LineSegment
+                    End="-62.0333261849151,24.566666299038" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Out part 2.Paths[Derived Column Output]"
+          TopLeft="197.6,300.933331802554">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="111.566653052801,45.0666663532789"
+              Start="0,0"
+              End="104.066653052801,45.0666663532789">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="51.7833265264005,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.7833265264005,0"
+                    Point2="55.7833265264005,0"
+                    Point3="55.7833265264005,4" />
+                  <mssgle:LineSegment
+                    End="55.7833265264005,41.0666663532789" />
+                  <mssgle:CubicBezierSegment
+                    Point1="55.7833265264005,41.0666663532789"
+                    Point2="55.7833265264005,45.0666663532789"
+                    Point3="59.7833265264005,45.0666663532789" />
+                  <mssgle:LineSegment
+                    End="104.066653052801,45.0666663532789" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Out part 2.Paths[Data Conversion Output]"
+          TopLeft="622.499969266356,281.866665268475">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-294.066643081441,-33.799999764959"
+              Start="0,0"
+              End="-286.566643081441,-33.799999764959">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-143.033321540721,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-143.033321540721,0"
+                    Point2="-147.033321540721,0"
+                    Point3="-147.033321540721,-4" />
+                  <mssgle:LineSegment
+                    End="-147.033321540721,-29.799999764959" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-147.033321540721,-29.799999764959"
+                    Point2="-147.033321540721,-33.799999764959"
+                    Point3="-151.033321540721,-33.799999764959" />
+                  <mssgle:LineSegment
+                    End="-286.566643081441,-33.799999764959" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Out part 2.Paths[not]"
+          TopLeft="467.766654965116,160.533332778878">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="171.39998005728,9.53333326704001"
+              Start="0,0"
+              End="163.89998005728,9.53333326704001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="81.69999002864,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="81.69999002864,0"
+                    Point2="85.69999002864,0"
+                    Point3="85.69999002864,4" />
+                  <mssgle:LineSegment
+                    End="85.69999002864,5.53333326704001" />
+                  <mssgle:CubicBezierSegment
+                    Point1="85.69999002864,5.53333326704001"
+                    Point2="85.69999002864,9.53333326704001"
+                    Point3="89.69999002864,9.53333326704001" />
+                  <mssgle:LineSegment
+                    End="163.89998005728,9.53333326704001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="77.86198221614,-15.1728515625,15.676015625,9.1728515625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Out part 2.Paths[Excel Source Output]"
+          TopLeft="205.133329053389,101.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="165.833325911727,38.1333327788777"
+              Start="0,0"
+              End="165.833325911727,30.6333327788777">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.0666663894389" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.0666663894389"
+                    Point2="0,19.0666663894389"
+                    Point3="4,19.0666663894389" />
+                  <mssgle:LineSegment
+                    End="161.833325911727,19.0666663894389" />
+                  <mssgle:CubicBezierSegment
+                    Point1="161.833325911727,19.0666663894389"
+                    Point2="165.833325911727,19.0666663894389"
+                    Point3="165.833325911727,23.0666663894389" />
+                  <mssgle:LineSegment
+                    End="165.833325911727,30.6333327788777" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Out part 2\Second half part 2">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,6 @@
+create star schema tables (fact & 2 dims)
+and get data from one of the 2 dest.
+
+
+
+By using this star schema, you can easily analyze inspection data based on different time periods, operators, and locations.

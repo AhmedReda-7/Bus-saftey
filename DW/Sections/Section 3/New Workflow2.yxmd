@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\faculty\faculty 2022-2023 semseter 2\DW\Weeks\Week 2\SSIS Files (Distributor 1, Distributor 2, Distributor 3)\Distributor 3.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Distributor 3.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Client Code" source="File: D:\faculty\faculty 2022-2023 semseter 2\DW\Weeks\Week 2\SSIS Files (Distributor 1, Distributor 2, Distributor 3)\Distributor 3.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Item Code" size="255" source="File: D:\faculty\faculty 2022-2023 semseter 2\DW\Weeks\Week 2\SSIS Files (Distributor 1, Distributor 2, Distributor 3)\Distributor 3.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Item Name" size="255" source="File: D:\faculty\faculty 2022-2023 semseter 2\DW\Weeks\Week 2\SSIS Files (Distributor 1, Distributor 2, Distributor 3)\Distributor 3.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="Sales Type" size="255" source="File: D:\faculty\faculty 2022-2023 semseter 2\DW\Weeks\Week 2\SSIS Files (Distributor 1, Distributor 2, Distributor 3)\Distributor 3.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Date" size="255" source="File: D:\faculty\faculty 2022-2023 semseter 2\DW\Weeks\Week 2\SSIS Files (Distributor 1, Distributor 2, Distributor 3)\Distributor 3.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Quantity" size="255" source="File: D:\faculty\faculty 2022-2023 semseter 2\DW\Weeks\Week 2\SSIS Files (Distributor 1, Distributor 2, Distributor 3)\Distributor 3.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Value" size="255" source="File: D:\faculty\faculty 2022-2023 semseter 2\DW\Weeks\Week 2\SSIS Files (Distributor 1, Distributor 2, Distributor 3)\Distributor 3.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Client Code" selected="True" type="V_WString" size="255" />
+            <SelectField field="Item Code" selected="True" type="V_WString" size="255" />
+            <SelectField field="Sales Type" selected="False" />
+            <SelectField field="Date" selected="True" type="V_WString" size="255" />
+            <SelectField field="Quantity" selected="True" type="Int64" size="8" />
+            <SelectField field="Value" selected="True" type="Float" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="438" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="18">odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=DWSection1;Data Source=M-R-S-S\SQLEXPRESS;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=M-R-S-S;Use Encryption for Data=False;Tag with column collation when possible=False|||T1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <TransactionSize>0</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="Client Code" Dest="Client Code" />
+                <Field Source="Item Code" Dest="Item Code" />
+                <Field Source="Item Name" Dest="Item Name" />
+                <Field Source="Date" Dest="Date" />
+                <Field Source="Quantity" Dest="QTY" />
+                <Field Source="Value" Dest="Sales" />
+                <Field Source="NewDateFormat" Dest="NewDateFormat" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source=M-R-S-S\SQLEXPRESS
+Catalog=DWSection1
+Query=T1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="270" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Substring([Date],6,4)+&quot;-&quot;+Substring([Date],3,2)+&quot;-&quot;+Substring([Date],0,2)" field="NewDateFormat" size="255" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NewDateFormat = Substring([Date],6,4)+"-"+Substring([Date],3,2)+"-"+Substring([D...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="18" width="180" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Distributor 3 File</Text>
+          <Font name="Arial" size="14.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="c397859f-b59a-4d0d-b0f6-e07639f229e0" />
+      <Telemetry>
+        <PreviousWorkflowId value="49c5148e-5426-476b-a5aa-35832e1bf81b" />
+        <OriginWorkflowId value="49c5148e-5426-476b-a5aa-35832e1bf81b" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
